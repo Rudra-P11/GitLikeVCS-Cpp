@@ -91,6 +91,51 @@ Show differences:
 ./vcs diff
 ```
 
+### Hinglish Command Aliases
+
+The VCS also supports Hinglish (Hindi-English mix) command aliases for better accessibility:
+
+Initialize a new repository:
+```bash
+./vcs naya repo bana
+```
+
+Add files to staging:
+```bash
+./vcs isko dekh filename.txt
+```
+
+Commit changes:
+```bash
+./vcs final kar -m "Your commit message"
+```
+
+View commit history:
+```bash
+./vcs history dikha
+```
+
+Create and switch branches:
+```bash
+./vcs naya rasta bana new-feature
+./vcs idhar chal new-feature
+```
+
+Merge branches:
+```bash
+./vcs jod de main
+```
+
+View repository status:
+```bash
+./vcs kya haal hai
+```
+
+Show differences:
+```bash
+./vcs antar
+```
+
 ### Example Workflow
 
 ```bash

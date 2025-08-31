@@ -172,6 +172,52 @@ Command-line parsing and routing:
 - branch [name] → repo.createBranch(name) or repo.listBranches()
 - merge <branch> → repo.mergeBranch(branch)
 
+### Hinglish Command Aliases
+
+The VCS also supports Hinglish (Hindi-English mix) command aliases for better accessibility and user experience:
+
+**Hinglish Command Mapping:**
+- naya repo bana → repo.init() (Initialize repository)
+- isko dekh <file> → repo.add(file) (Add file to staging)
+- final kar -m <msg> → repo.commit(msg) (Commit changes)
+- history dikha → repo.log() (View commit history)
+- idhar chal <hash> → repo.checkout(hash) (Checkout commit)
+- kya haal hai → repo.status() (View repository status)
+- antar → repo.diff() (Show differences)
+- naya rasta bana [name] → repo.createBranch(name) or repo.listBranches() (Create/list branches)
+- jod de <branch> → repo.mergeBranch(branch) (Merge branch)
+
+**Example Hinglish Workflow:**
+```bash
+# Initialize repository
+./vcs naya repo bana
+
+# Add files to staging
+./vcs isko dekh file1.txt
+./vcs isko dekh file2.txt
+
+# Check status
+./vcs kya haal hai
+
+# Commit changes
+./vcs final kar -m "Initial commit"
+
+# View history
+./vcs history dikha
+
+# Create and switch branches
+./vcs naya rasta bana feature-x
+./vcs idhar chal feature-x
+
+# Make changes and commit
+./vcs isko dekh modified.txt
+./vcs final kar -m "Added feature X"
+
+# Merge back
+./vcs idhar chal master
+./vcs jod de feature-x
+```
+
 ---
 
 ## Key Features Implemented
@@ -510,5 +556,3 @@ This Git-like VCS project demonstrates comprehensive C++ programming skills incl
 The project provides a solid foundation for understanding version control internals while serving as a portfolio piece showcasing advanced C++ development capabilities. Each phase builds upon the previous, demonstrating iterative development and feature enhancement.
 
 ---
-
-*End of Comprehensive Project Documentation*
